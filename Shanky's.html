@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHANKY'S CREAM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Shizuru&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&family=Shizuru&family=ZCOOL+QingKe+HuangYou&display=swap" rel="stylesheet">
+
+<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Gloria+Hallelujah&family=Roboto+Serif:ital,wght@1,900&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            background-image: url(https://images.unsplash.com/photo-1567095716798-1d95d8f4c479?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8cGluayUyMGFuZCUyMGJsdWV8ZW58MHx8MHx8&w=1000&q=80);
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .h1{
+            background-color: #2F3C7E;
+            text-align: center;
+            border: 3px solid #2F3C7E;
+            border-radius: 15px;
+            color: #e4e0ce;
+            font-family: 'ZCOOL QingKe HuangYou', cursive;
+            font-size: large;
+            padding: 3px;
+        }
+        .navigation{
+            background-color: #FF69B4;
+            border: 3px solid #FF69B4;
+            border-radius: 356px;
+            margin-top: 10px;
+        }
+        .navigation ol{
+            overflow: auto;
+            /* Overflow is used to get back the colour which is overflowed while floating it. */
+        }
+        .navigation li{
+            float: left;
+            padding:9px;
+            list-style: none;
+            /* List-style property defines the appearance, position, and image for list item elements. */
+        }
+        .navigation li a{
+            color: #00FFFF;
+            font-family: 'Quicksand', sans-serif;
+            margin: 14px;
+            text-decoration: none;
+            /* It sets the appearance of decorative lines on text which appear due to being a hyperlink */
+        }
+        .navigation li a:hover{
+            color: black;
+        }
+        #search{
+            float: right;
+            padding: 7px 6px;
+            border: 2px solid #00b1d2;
+            border-radius: 52px;
+            text-align: center;
+            position: relative;
+            top: 2px;
+            right: 24px;
+            background-color: white;
+        }
+        #searchicon{
+            text-indent: -100734px;
+            width: 24px;
+            height: -243px;
+            position: relative;
+            right: -650px;
+            top: 7px;
+            display: inline-block;
+            border: 3px solid white;
+            background: url(https://www.vhv.rs/dpng/d/8-86639_icon-search-pink-png-transparent-png.png);
+            background-size: 25px;
+            background-position: center;
+        }
+        #signin{
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 900;
+            font-size: x-large;
+            box-sizing: border-box;
+            border: 8px solid #00B1D2FF;
+            border-radius: 29px;
+            padding: 108px;
+            margin: 3px auto;
+            text-align: center;
+            height: 386px;
+            width: 33%;
+            box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+            backdrop-filter: blur(5px);
+            box-shadow:
+            1.6px 4px 6.6px rgba(0, 0, 0, 0.3),
+            4.5px 11.3px 12.5px rgba(0, 0, 0, 0.216),
+            9.7px 24.1px 17.8px rgb(255, 137, 206),
+            19.2px 47.5px 22.5px rgb(248, 132, 204),
+            38.7px 96.1px 28.3px rgba(0, 0, 0, 0.126),
+            98px 243px 55px rgba(0, 0, 0, 0.074);
+        }
+        .login{
+            margin-top: -140px;
+        }
+        img{
+            width: 128px;
+            margin: auto;
+        }
+        .mainbox{
+            height:1200px;
+        }
+        .logo{
+            width: 38%;
+            margin-left: 550px;
+            padding: 2px 2px 2px 2px;
+        }
+        .shanky{
+            text-align: center;
+            display: inline;
+            font-size: 60px;
+            font-family: 'Gloria Hallelujah', cursive;
+            color: #f53163;
+        }
+        #icecreamimage{
+            position: relative;
+            top: 17px;
+            right: 16px;
+        }
+        #login{
+            display: inline-block;
+            width: 278px;
+            margin: 12px auto;
+            position: relative;
+            top: -104px;
+            right: 2px;
+        }
+        .input input {
+            font-family: 'Quicksand', cursive;
+            display: block;
+            padding: 10px;
+            border: 3px solid #606060FF;
+            border-radius: 6px;
+            font-size: 21px;
+            width: 367px;
+            margin: 8px auto;
+            position: relative;
+            right: 61px;
+            bottom: 74px;
+        }
+        .btn{
+            font-family: 'Quicksand', cursive;
+            margin: 30px -36px;
+            margin-top: -86px;
+            background-color: #00B1D2FF;
+            color: white;
+            padding: 14px 131px;
+            border-radius: 87px;
+            font-size: 23px;
+            cursor: pointer;
+            position: relative;
+            top: -10px;
+        }
+        .btn:hover {
+        background-color: rgb(31, 30, 30);
+        }
+    </style>
+</head>
+<body>
+    <header>
+    <div class="h1"><h1>SHAWTY'S CONE</h1></div>
+        <nav class="navigation">
+            <ol type="I">
+                <li> <a href="https://facebook.com">HOME</a></li>
+                <li> <a href="https://twitter.com/">SERVICES</a></li>
+                <li> <a href="https://instagram.com">CONTENTS</a></li>
+                <li> <a href="https://google.com">CONTACT US</a></li>
+                <li> <a href="https://netflix.com">ABOUT US</a></li>
+                <div class="search">
+                    <input type="text" id="search" placeholder="Search this Website">
+                    <!-- Placeholder is used to write text inside the box. -->
+                    <input type="button" id="searchicon">
+                </div>
+            </ol>
+        </nav>
+    </header>
+    <div class="mainbox">
+        <div class= "logo">
+            <h3 class="shanky">SHAWTY'S <img src="/IMAGES/icecream.png" id="icecreamimage" alt=""></h3>
+        </div>
+        <div id="signin">
+            <h3 id="login">Log In to Shawty's</h3>
+            <form action="noaction.php">
+                <div id="email" class="input">
+                    <input type="text" name="email" placeholder="Email address or phone number">
+                </div>
+                <div id="password" class="input">
+                    <input type="password" name="password" placeholder="Password">
+                </div>
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- COLORS
+Gray (#606060FF) and Lime Punch (#D6ED17FF)
+Blue Atoll (#00B1D2FF) and Vibrant Yellow (#FDDB27FF) -->

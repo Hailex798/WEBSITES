@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOOD FLEX</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&family=Palette+Mosaic&family=Quicksand:wght@700&family=Shizuru&family=ZCOOL+QingKe+HuangYou&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Bebas+Neue&family=Gloria+Hallelujah&family=Roboto+Serif:ital,opsz,wght@1,8..144,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Architects+Daughter&family=Bebas+Neue&family=Gloria+Hallelujah&family=Roboto+Serif:ital,opsz,wght@1,8..144,900&display=swap"
+      rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Architects+Daughter&family=Bebas+Neue&family=Cutive+Mono&family=Gloria+Hallelujah&family=Kdam+Thmor+Pro&family=Roboto+Serif:ital,opsz,wght@1,8..144,900&display=swap"
+      rel="stylesheet"/>
+    <style>
+      /* CSS RESET */
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* NAVIGATION BAR */
+      #navbar {
+        display: flex;
+        align-items: center;
+        position: relative;
+        top: 0px;
+        background-color: black;
+        border-radius: 143px;
+        width: 100%;
+      }
+      #navbar::before {
+        content: "";
+        background-color: black;
+        position: absolute;
+        /* height: 100%; */
+        width: 100%;
+        z-index: -1;
+        opacity: 0.2;
+      }
+      /* NAVIGATION BAR: HEADING */
+      #head {
+        font-size: 80px;
+        font-family: "Monoton", cursive;
+        word-spacing: 12px;
+        color: red;
+        position: relative;
+        left: 275px;
+      }
+      /* NAVIAGATION BAR: LOGO & IMAGE */
+      #logo {
+        width: 175px;
+        height: 164px;
+        position: relative;
+        left: -396px;
+        top: -1px;
+      }
+      /* NAVIGATION BAR: LIST STYLING */
+      #navbar ul {
+        display: flex;
+      }
+      #navbar li {
+        list-style: none;
+        font-size: 1.4rem;
+      }
+      #navbar a {
+        color: white;
+        display: block;
+        padding: 3px 61px;
+        text-decoration: none;
+        position: relative;
+        right: -293px;
+        font-family: "Bebas Neue", cursive;
+      }
+      #navbar a:hover {
+        color: red;
+        background-color: white;
+        border-radius: 40px;
+        animation: pulsate 2.5s ease-in-out;
+      }
+      @keyframes pulsate {
+        0% {
+          box-shadow: 0 0 25px rgb(235, 139, 75), 0 0 50px rgb(255, 0, 0);
+        }
+      }
+      /* HOME SECTION */
+      #home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 421px;
+        padding: 4px 200px;
+      }
+      #home::before {
+        content: "";
+        position: absolute;
+        background: url(/IMAGES/FOODFLEX1/BACKGROUNDS/RED\ CHILLI\ BG.jpg)
+          no-repeat center center/cover;
+        top: 0px;
+        left: 0px;
+        height: 1328px;
+        width: 100%;
+        z-index: -1;
+        opacity: 0.8;
+      }
+      #home h1 {
+        color: black;
+        font-family: "Architects Daughter", cursive;
+        position: relative;
+        top: -77px;
+      }
+      #home p {
+        color: rgb(255, 255, 255);
+        font-family: "Bebas Neue", cursive;
+        font-size: 1.5rem;
+        text-align: center;
+        position: relative;
+        top: -55px;
+      }
+      /* SERVICES SECTION */
+      #services {
+        margin: 34px;
+        display: flex;
+      }
+      #services .box {
+        border: 6px solid #031927;
+        border-radius: 41px;
+        padding: 39px;
+        margin: 10px;
+        background: #ba1200;
+        cursor: pointer;
+      }
+      #services .box img {
+        height: 183px;
+        margin: auto;
+        width: 191px;
+        display: block;
+        position: relative;
+        top: -25px;
+      }
+      #services .box h2 {
+        position: relative;
+        top: -9px;
+        color: rgb(255, 255, 255);
+      }
+      #services p {
+        font-family: "Bebas Neue", cursive;
+        font-size: 1.3rem;
+      }
+      /* CLIENT SECTION */
+      #client-section {
+        height: 144px;
+        /* upon removal of height, the bg gets shortened out at the start as it don't have to stretch out. */
+        /* display: flex; */
+      }
+      #client-section::before {
+        content: "";
+        position: absolute;
+        top: 1328px;
+        background: url(/IMAGES/FOODFLEX1/BACKGROUNDS/WAFFLES\ BG.jpg) no-repeat center center/cover;
+        width: 100%;
+        height: 375px;
+        z-index: -1;
+        opacity: 0.7;
+      }
+      #clients{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .client-item{
+        padding: 43px;
+      }
+      #clients img{
+        height: 134px;
+      }
+      /* CONTACT SECTION */
+      #contact{
+        position: relative;
+      }
+      #contact::before{
+        content: "";
+        position: absolute;
+        top: -32px;
+        background: url(/IMAGES/FOODFLEX1/BACKGROUNDS/CONTACTUS.png) no-repeat center center/cover;
+        width: 100%;
+        height: 586px;
+        z-index: -1;
+        opacity: 0.75;
+      }
+      #contact-box{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding-bottom: 34px;
+        }
+        #contact-box input,
+        #contact-box textarea{
+          width: 100%;
+          padding: 0.5rem;
+          border: 2px solid black;
+          border-radius: 9px;
+        }
+        #contact-box form{
+          width: 40%;
+        }
+        #contact-box label{
+          font-size: 1.4rem;
+          font-family: "Kdam Thmor Pro", sans-serif;
+        }
+        ::placeholder{
+          color: red;
+          font-family: 'Quicksand', sans-serif;
+        }
+        footer{
+          background: black;
+          color: white;
+          padding: 10px 20px;
+        }
+        
+        /* RESPONSIVENESS */
+
+        /* FOR MINI-PHONE */
+        @media (min-width: 350px) and (max-width: 801px){
+          /* NAVIGATION */
+          #navbar{
+
+          }
+          #navbar a{
+            
+          }
+          #logo{
+            
+          }
+          #head {
+            font-size: 60px;
+          }
+        }
+        /* FOR PHONE */
+        @media (max-width: 1496px) {
+          /* NAVIGATION */
+          #navbar{
+            flex-direction: column;
+            /* height: 171px; */
+          }
+          #navbar a{
+            top: -163px;
+            right: -20px;
+          }
+          #logo{
+            top: -124px;
+            left: -315px;
+          }
+          #head {
+            left: 21px;
+            top: 16px;
+          }
+          /* HOME SECTION */
+          #home{
+            
+          }
+          
+          /* SERVICES SECTION */
+          #services{
+            flex-direction: column;
+          }
+          
+          /* CLIENT SECTION */
+          #clients{
+            flex-wrap: wrap;
+          }
+          #clients img{
+            width: 153px;
+            height: 159px;
+            margin: -15px;
+          }
+          /* CONTACT US */
+          
+        }
+        /* FOR TV */
+      @media (min-width: 1496px) and (max-width: 1705px){
+        #client-section::before{
+          top: 1352px;
+        }
+        #home::before{
+          height: 1352px;
+        }
+      }
+        /* UTILITY CLASSES */
+      .main-h {
+        font-size: 3rem;
+        padding: 12px;
+        font-family: "Kdam Thmor Pro", sans-serif;
+      }
+      .submain-h {
+        font-size: 1.8rem;
+        padding: 12px;
+        font-family: "Kdam Thmor Pro", sans-serif;
+      }
+      .center {
+        text-align: center;
+      }
+        /* BUTTON */
+      .btn {
+        font-family: auto;
+        margin: -95px 303px;
+        margin-top: 34px;
+        background-color: red;
+        border: 3px solid red;
+        color: white;
+        padding: 0px 40px;
+        border-radius: 87px;
+        font-size: 1.5rem;
+        cursor: pointer;
+        position: relative;
+        top: -47px;
+        box-shadow: inset 0 0 35px 0px rgb(255, 0, 0),
+        inset 0 2px 1px 1px rgb(255, 0, 0), 1px 1px 15px 2px rgb(255, 8, 0);
+        text-shadow: 1px -1px 3px rgb(255, 255, 255),
+        -1px 1px 3px rgb(255, 58, 58);
+        outline: none;
+        -webkit-transition: box-shadow 0.4s, text-shadow 0.5s;
+        -moz-transition: box-shadow 0.4s, text-shadow 0.5s;
+        transition: box-shadow 0.4s, text-shadow 0.5s;
+      }
+      .btn:hover {
+        cursor: pointer;
+        box-shadow: inset 0 0 35px 0px rgb(255, 0, 0),
+          inset 0 2px 1px 1px rgb(255, 0, 0), 1px 1px 15px 2px rgb(253, 0, 0);
+          text-shadow: 3px -3px 5px rgba(143, 162, 199, 1),
+          -3px 3px 5px rgb(192, 151, 178);
+        -webkit-transition: box-shadow 0.4s, text-shadow 0.5s;
+        -moz-transition: box-shadow 0.4s, text-shadow 0.5s;
+        transition: box-shadow 0.4s, text-shadow 0.5s;
+      }
+      .btn:active {
+        background: linear-gradient(
+          30deg,
+          rgb(255, 59, 59) 0%,
+          rgb(226, 28, 28) 100%
+          );
+          color: rgb(255, 255, 255);
+          box-shadow: inset 0 0 10px 2px rgb(255, 53, 53),
+          1px 1px 15px 2px rgb(207, 36, 36);
+          text-shadow: 1px -1px 1px rgba(255, 33, 33, 0.75),
+          -1px 1px 1px rgba(240, 19, 19, 0.75);
+          -webkit-transition: background 0.3s color 0.2s,
+          text-shadow 0.3s box-shadow 0.3s;
+          -moz-transition: background 0.3s color 0.2s,
+          text-shadow 0.3s box-shadow 0.3s;
+          transition: background 0.3s color 0.2s, text-shadow 0.3s box-shadow 0.3s;
+        }
+        /* DIVIDER */
+        .hr {
+          width: 100%;
+          height: 1px;
+          display: block;
+          position: relative;
+          margin-bottom: 0em;
+          padding: 2em 0;
+          }
+      .hr:after,
+      .hr:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          bottom: 50%;
+          left: 0;
+      }
+  
+      .hr:before {
+          background: linear-gradient( 90deg, $bg 0%, $bg 50%, transparent 50%, transparent 100% );
+          background-size: $barsize;
+          background-position: center;
+          z-index: 1;
+      }
+  
+      .hr:after {
+  
+          transition: opacity 0.3s ease, animation 0.3s ease;
+  
+          background: linear-gradient(
+              to right, 
+              #da7d7d 5%, 
+              #888080 15%, 
+              #4e4e4e 25%, 
+              #ada9a9 35%, 
+              #fdcaca 45%, 
+              #f18181 55%, 
+              #e95f5f 65%, 
+              #aa3737 75%, 
+              #d42525 85%, 
+              #ff0000 95%);
+  
+          background-size: 200%;
+          background-position: 0%;
+          animation: bar 15s linear infinite;
+          }
+  
+      @keyframes bar {
+          0% { background-position: 0%; }
+          100% { background-position: 200%; }
+          }
+    </style>
+  </head>
+  <body>
+    <!-- NAVIGATION BAR -->
+    <nav id="navbar">
+      <p id="head">food flex</p>
+      <img id="logo" src="/IMAGES/FOODFLEX1/LOGOS/BURGER2 PNG.png" alt="BURGER HERE">
+      <ul>
+        <li class="item"><a href="#">Home</a></li>
+        <li class="item"><a href="#">Contact</a></li>
+        <li class="item"><a href="#">About us</a></li>
+      </ul>
+    </nav>
+    <!-- HOME SECTION -->
+    <section id="home">
+      <h1 class="main-h">Welcome to Food Utopia</h1>
+      <p>
+        Food Flex specializes in delivering plant-based, organic ready-to-eat
+        meals directly to the customer.
+      </p>
+      <p>
+        Our two Maryland locations may be a half hour’s drive away from one
+        another, but you know there’s our's website the only place you’ll need
+        to go for a great online experience.
+      </p>
+      <button class="btn">Order Now</button>
+    </section>
+    <!-- DIVIDER -->
+    <b class="hr"></b>
+    <!-- SERVICES SECTION -->
+    <section class="services">
+      <h1 class="main-h center">Our Services</h1>
+      <div id="services">
+        <div class="box">
+          <img src="/IMAGES/FOODFLEX1/LOGOS/PIZZA3.png" alt="DELICIOUS PIZZA" />
+          <h2 class="submain-h center">Catering Services</h2>
+          <p class="center">
+            Food Flex has one of the best catering services in Delhi. It is an
+            established well-managed center providing world-class culinary
+            experience. Being one of the top-notch caterers in Delhi with
+            professional cooks & desirable Indian wedding menus.
+          </p>
+        </div>
+        <div class="box">
+          <img
+            src="/IMAGES/FOODFLEX1/LOGOS/MEAL PLATE.png"
+            alt="ALL YOU CAN EAT: BUFFET"
+          />
+          <h2 class="submain-h center">Equisite Buffet</h2>
+          <p class="center">
+            Whenever we talk about buffets, one of the most popular places that
+            comes to our mind is defo Food Flex. This place is known for serving
+            mouth-watering North Indian fare. They serve 3 veg & 3 non-veg
+            starters, 2 veg & 2 non-veg curries, biryani, dal and more.
+          </p>
+        </div>
+        <div class="box">
+          <img
+            src="/IMAGES/FOODFLEX1/LOGOS/DELIVERY GUY.png"
+            alt="FAST DELIVERY"
+          />
+          <h2 class="submain-h center">Food Ordering</h2>
+          <p class="center">
+            From cold plates, ramen to sushi, dimsum, curries and desserts, Food
+            Flex's chef Aditya Roy's latest venture has around 100 Asian,
+            Chinese, Thai and Japanese dishes on its wide menu at affordable
+            prices
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- DIVIDER -->
+    <b class="hr"></b>
+    <!-- CLIENT SECTION -->
+    <section id="client-section">
+      <h1 class="main-h center">Our Clients</h1>
+      <div id="clients">
+        <div class="client-item">
+          <img src="/IMAGES/FOODFLEX1/PARTNERS/TAJ LOGO.png" alt="TAJ HOTEL" />
+        </div>
+        <div class="client-item">
+          <img src="/IMAGES/FOODFLEX1/PARTNERS/ITC LOGO.png" alt="ITC LTD." />
+        </div>
+        <div class="client-item">
+            <img src="/IMAGES/FOODFLEX1/PARTNERS/YOU FINGER.png" alt="YOU" />
+        </div>
+        <!-- <div class="client-item">
+            <img src="/IMAGES/FOODFLEX1/PARTNERS/DOMINOES.png" alt="DOMINOES" />
+        </div> -->
+        <div class="client-item">
+          <img src="/IMAGES/FOODFLEX1/PARTNERS/BURJ2.png" alt="BURJ AL ARAB" />
+        </div>
+      </div>
+    </section>
+    <!-- DIVIDER -->
+    <br><br><br><br><br><br><br><br><br>
+    <b class="hr"></b>
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h1 class="main-h center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="number">Mobile No:</label>
+                    <input type="number" name="name" id="number" placeholder="Enter your phone no.">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+            </form>
+        </div>
+    </section>
+    <!-- COPYRIGHT / FOOTER -->
+    <footer>
+        <div class="center">
+            Copyright &copy; www.FoodFlex.com. All rights reserved!
+        </div>
+    </footer>
+  </body>
+</html>
